@@ -1,3 +1,8 @@
+after cloning the project, run this in side the project folder.
+```
+go mod init nice
+```
+
 terminal 1:
 ```
 $ go run server/main.go
