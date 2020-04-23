@@ -1,11 +1,17 @@
 terminal 1:
+```
 $ go run server/main.go
+```
 
 terminal 2:
+```
 $ go run gateway/main.go
+```
 
 terminal 3:
+```
 $ curl -X POST -i http://localhost:8080/v1/example/echo/abcde -d '{"num": "100"}'
+```
 HTTP/1.1 200 OK
 Content-Type: application/json
 Grpc-Metadata-Content-Type: application/grpc
