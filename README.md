@@ -1,6 +1,16 @@
 after cloning the project, run this in side the project folder.
 ```
 go mod init nice
+protoc -I/usr/local/include -I. \
+  -I$GOPATH/src \  
+  -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+  --go_out=plugins=grpc:. \
+  hello/hello.proto  
+protoc -I/usr/local/include -I. \
+    -I$GOPATH/src \
+    -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+    --grpc-gateway_out=logtostderr=true:. \
+    hello/hello.proto
 ```
 
 terminal 1:
