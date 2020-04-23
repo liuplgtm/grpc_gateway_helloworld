@@ -23,7 +23,7 @@ terminal 2:
 ```
 $ go run gateway/main.go
 ```
-Note: gateway wraps around the endpoint localhost:9000 provided by terminal 1.
+Note: gateway wraps around the endpoint localhost:9090 provided by terminal 1.
 
 terminal 3:
 ```
