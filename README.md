@@ -40,6 +40,7 @@ Content-Length: 26
 =======================
 
 Forgot to test grpc, here is it.
+
 terminal 1:
 ```
 go run server/main.go
