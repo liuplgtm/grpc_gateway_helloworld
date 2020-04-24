@@ -36,3 +36,17 @@ Date: Thu, 23 Apr 2020 17:27:28 GMT
 Content-Length: 26
 
 {"id":"abcde","num":"100"}%
+
+=======================
+Forgot to test grpc, here is it.
+terminal 1:
+```
+go run server/main.go
+```
+
+terminal 2:
+```
+go run client/main.go
+```
+
+I could not get grpc_cli working so I had to create the client code. 
