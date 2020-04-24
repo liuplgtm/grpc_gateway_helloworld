@@ -52,3 +52,8 @@ go run client/main.go
 ```
 
 I could not get grpc_cli working so I had to create the client code. 
+
+Note:
+the two servers run on different ports.
+If you want to run them on the same port, go to here:
+https://github.com/liuplgtm/grpc_rest_on_same_port
