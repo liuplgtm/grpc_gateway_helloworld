@@ -11,9 +11,9 @@ message SimpleMessage {
 }
 service HelloService {
   rpc Echo(SimpleMessage) returns (SimpleMessage) {
-    option (google.api.http) = {
-      post: "/v1/example/echo/{id}"
-      body: "*"
-    };
+    //    option (google.api.http) = {
+    //  post:
+    //    "/v1/example/echo/{id}" body: "*"
+    //  };
   }
 }

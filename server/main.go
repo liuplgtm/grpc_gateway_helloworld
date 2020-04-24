@@ -7,6 +7,7 @@ import (
 	"google.golang.org/grpc"
 
 	"golang.org/x/net/context"
+	"google.golang.org/grpc/reflection"
 
 	pb "nice/hello"
 )
@@ -28,5 +29,7 @@ func main() {
 
 	pb.RegisterHelloServiceServer(grpcServer, &helloServer{})
 	log.Println("listening to port *:9090")
+	reflection.Register(grpcServer)
+
 	grpcServer.Serve(lis)
 }
